@@ -1,0 +1,15 @@
+class  test77
+{
+	public static void main(String[] args) 
+	{
+		float a;
+		System.out.println("hello world");
+		int b = (int) a;
+		String c = "html";
+		System.out.println(b);
+		c ="js";
+		System.out.println(c);
+		a = 2.4f;
+		System.out.println(a);
+	}
+}

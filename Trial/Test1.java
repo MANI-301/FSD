@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+class Test1 
+{
+	/*public static void main ( String [] args)
+	{
+		int rev =0, num =28;
+		rev*= 10+num % 10;
+		num*=2-(num+32);
+		System.out.println(rev);
+	}*/
+	//odd or even
+	static Scanner sc=new Scanner(System.in);
+		public static void main (String [] args){
+		System .out.print("enter a");
+	int a=sc.nextInt();
+	String b =(a==0)? 'Zero' : (a%2==0)?'Even' : 'Odd';
+	System.out.println(b);
+	}
+	
+}

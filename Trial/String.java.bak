@@ -1,0 +1,15 @@
+import java.util.*;
+class String 
+{
+	static Scanner sc = new SCanner (System.in);
+	public static void main(String[] args) 
+	{
+		System.out.println("Enter Any String:");
+		String str = sc.nextLine();
+		
+		String s = new string ("Java");
+		
+		System.out.println(s);
+		
+	}
+}
