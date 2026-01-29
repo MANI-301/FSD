@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    height: 70px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}   
+   
+   
+nav >ol{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+main{
+    height: 200px;
+    background-color:  burlywood;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;   
+}
+main > button{
+          height: 50px;
+          width: 200px;
+          background-color: black;
+          color: white;
+          border-radius: 20px;
+}
+
+section{
+    height: calc(100vh - 270px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section > .card{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

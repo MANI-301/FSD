@@ -1,0 +1,92 @@
+nav{
+    background-color: rgb(226, 226, 21);
+}
+/* ( : ) pseudo selector Symbol */
+nav > h2:hover{
+    color: blue;
+    text-decoration: underline;
+    font-style: inherit;
+}
+header{
+    height: 200px;
+    background-color: rgb(255, 77, 0);
+}
+
+header > h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+header >h1:active{
+    color: green;
+}
+
+section > h1:nth-child(1){
+    color: rgb(15, 99, 235);
+}
+section > p:nth-child(6){
+    background-color: brown;
+}
+
+section > ol > li:nth-child(2n){
+    background-color: rgb(243, 139, 4);
+}
+section > ol >li:nth-child(2n+1){
+ background-color: aqua;
+}
+
+article > h1{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1.2px;
+}
+
+article > p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* Pseudo Elemnt Selector (::) */
+article > p::first-letter{
+    font-size: 50px;
+    font-style: italic;
+}
+
+
+article > h1::before{
+    content: "***";
+    color: rgb(255, 0, 38);
+}
+
+article >h1::after{
+    content: "!!";
+    color: rgb(255, 0, 0);
+}
+
+article::selection{
+    background-color: chocolate;
+    color: blanchedalmond;
+}
+
+article > ol > li::marker{
+    color: rgb(255, 0, 0);
+}
+
+article > ol > li:nth-child(2n+1){
+    color: blue;
+}
+
+article > ol > li:nth-child(2n+1)::marker{
+    color: blue;
+}
+
+/* Attribute Selector using [] square Brackets */
+
+form > input[type="text"]{
+    background-color: bisque;
+}
+
+.container > a[target="_self"]{
+    font-size: 50px;
+}
+         

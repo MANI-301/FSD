@@ -1,0 +1,29 @@
+#con1{
+    background-color: aquamarine;
+    height: 200px;
+}
+/* Combining two selectors like id,class etc... 
+if you are Targeting inside the tag give first parent Tag */
+
+/* descentdant Selector it will target both parent and child  */
+#con1 #h{
+    color: red;
+}
+
+#con1 .box{
+    background-color: yellow;
+    height: 100px;
+}
+
+/* Direct child selector it will target only child*/
+#con2>h2{
+      color: green;
+}
+
+#con2 > .box > h2{
+    color: blue;
+}
+
+.a1 + h4{
+    background-color: green;
+}

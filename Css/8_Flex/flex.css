@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    display: flex; /* whenever we are using display-flex must use height and width */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(225, 168, 93);
+
+}
+
+.container{
+    height: 500px;
+    width: 900px;
+    border: 3px solid rgb(250, 7, 7);
+    display: flex; /* it will gives contents in center and comes in row because dispaly flex isrow wise */
+    flex-direction: row;
+    justify-content: center; /* It is Arraged by Main Axis  the Main axis is nothing flex direction */
+    align-items: center;
+    gap: 30px;
+    background-color: greenyellow;
+    
+
+   /* flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;  if you put column-reverse means starts comes downwards
+    flex-direction: column-reverse; }
+    */
+    /*
+    justify-content: start;
+    justify-content: end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content:space-around
+    justify-content:space-evenly */
+}
+.container > .box {
+    height: 80px;
+    width: 80px;
+    border: 3px solid rgb(255, 140, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

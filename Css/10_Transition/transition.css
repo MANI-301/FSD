@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    height: 300px;
+    width: 300px;
+    background-color: blueviolet;
+  /* whenever we hover to use transition */
+    transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out; /* ease means slow ,ease in means fast ,ease out means */
+    transition-delay: 0.5s;
+}
+.inner{
+    border-radius: 50%;
+    background-color: yellow;    
+}

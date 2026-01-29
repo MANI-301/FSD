@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.outer{
+    height: 100vh;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    width: 400px;
+    background-color: bisque;
+    padding: 20px 40px;
+}
+.inner > header >h1{
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;     
+}
+.inner > header >p{
+    font-size: 16px;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+.inner > form > {
+
+}

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+/* it is used take Overall body height: 100vh --> View port; */
+.con2{
+    height: 400px;
+    width: 500px;
+    background-color: aquamarine;
+}
+.con2 > .box2 {
+    height: 200px;
+    width: 300px;
+    background: orange;
+
+}

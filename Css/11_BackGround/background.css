@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    background-image:  linear-gradient(goldenrod, red, green); /* colour hunt and colour websites for like RGB */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+}
+
+.outer > .inner{
+    height: 400px;
+    width: 600px;
+    background-color: aqua;
+    text-align: center;
+    border: 2px solid rgb(255, 0, 0);
+    background-image: url("Mahi.jpg") ;
+    background-position: center;
+    background-repeat: no-repeat;
+  /*  background-size: cover;  */
+    border-radius: 20px;
+    box-shadow: 0px 4px 6px black;
+}
+
+.outer > .inner >h1{
+    text-transform: uppercase;
+}
+
+.outer > .inner > img{
+    padding: 10px;
+}

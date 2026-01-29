@@ -1,0 +1,39 @@
+nav{
+    background-color: rgb(11, 218, 250);
+    height: 100px;
+}
+main{
+    background-color: chocolate;
+    height: 200px;
+}
+#a{
+    color: rgb(6, 37, 239);
+    padding: 35px;
+}
+
+section{
+    height: 250px;
+    background-color: green;
+}
+
+.p1{
+    color: white;
+}
+.p2{
+    color: white;
+}
+.p3{
+    color: white;
+}
+.p4{
+    color: white;
+}
+/* Universal Selector using (*) */
+*{
+    text-align: center;
+    font-style: italic;
+}
+/* Group Selector using element with class and id*/
+p,#a {
+    text-decoration: underline;
+}
