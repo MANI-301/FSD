@@ -1,0 +1,39 @@
+import java.util.*;
+class RemoveSpecial 
+{
+	public static void main(String[] args) 
+	{
+		String s = "hi# how@ !are y-o-u";
+		char [] c = new char[s.length()];
+		int index =0 ;
+		for(int i=0;i<s.length();i++){	
+		char ch1 = s.charAt(i);
+		   if(ch1>='a' && ch1<='z' || ch1>= 'A' && ch1<= 'Z' || ch1==' '){
+			   c[index] = ch1;
+			   index++;
+		}
+	
+		}
+		boolean capital = true;
+		for(int i=0 ; i<c.length;i++){
+		  char ch2 = c[i];
+          
+		  if (ch2 == ' ')
+		  {
+			  capital =true;
+		  }
+		  else if (capital && ch2>='a' && ch2<='z')
+		  {
+			  c[i] = (char)(ch2-32);
+			  capital =false;
+		  }
+		  else{
+			  capital = false;
+		  }
+		}
+		for(int i=0;i<c.length;i++){
+		   System.out.print(c[i]);
+		  
+		}
+	}
+}	

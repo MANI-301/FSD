@@ -1,0 +1,38 @@
+class RemoveDup 
+{
+	public static void main(String[] args) 
+	{
+		String s = "developer";
+		String s1=remove(s);
+		System.out.println(s1);
+	}
+	public static String remove(String s)
+	{
+		char[]a=s.toCharArray();
+		String s2 ="";
+		for (int i=0;i<a.length ;i++ )
+		{
+			for (int j=i+1;j<a.length ;j++ )
+			{
+				if (a[i]==' ')
+				{
+					continue;
+				}
+				if (a[i]==a[j])
+				{
+					a[j]=' ';
+				  	
+				}
+			}
+		}
+		for (int i=0;i<a.length ;i++ )
+		{
+			if (a[i]!=' ')
+			{
+				s2+=a[i];
+			}
+			
+		}
+		return s2;
+	}
+}

@@ -1,0 +1,33 @@
+class Kth{
+    public static void main(String[] args) {
+        int[] arr = {10, 4, 3, 50, 23, 90};
+        int k = 3;
+
+        for (int i = 0; i < arr.length-1; i++) {
+            for (int j = 0; j < arr.length - 1 - i; j++) {
+                if (arr[j] < arr[j + 1]) { 
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+		int count = 1;
+		int largest = arr[0];
+        for (int i = 0; i< arr.length-1; i++) {
+			if(arr[i]!=arr[i+1]){
+				count++;
+				if(count==k){
+					largest = arr[i];
+					break;
+				}
+			}
+			}
+    
+	if (count>=k)
+			{
+		      System.out.println("Kth Largest: " + k +" = "+ largest);
+			}
+        
+}
+}

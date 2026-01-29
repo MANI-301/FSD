@@ -1,0 +1,23 @@
+class CountAlaphabets 
+{
+	public static void main(String[] args) 
+	{
+		String s = "aaabbaac";
+		char[]a = new char[s.length()];
+		for (int i=0;i<a.length ;i++ )
+		{
+			a[i]=s.charAt(i);
+		}
+		int count = 1;
+		for (int i=0;i<a.length-1;i++)
+		{
+			if (a[i]==a[i+1])
+			{
+				count++;
+			}
+			else{
+				System.out.println(a[i]+":"+count);
+		}
+	}
+}
+}

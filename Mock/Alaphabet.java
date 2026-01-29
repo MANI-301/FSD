@@ -1,0 +1,38 @@
+import java.util.*;
+class Alaphabet
+{
+	public static void main(String[] args) 
+	{
+		String s = "a3b10c7";
+		char[]a = new char[s.length()];
+		for (int i=0;i<s.length();i++)
+		{
+			a[i] = s.charAt(i);
+		}
+		String num = "";
+		for (int i=0;i<a.length;i++)
+		{
+			if (a[i]>='0' && a[i]<='9')
+			{
+				num+=a[i];
+			}
+			 else {
+				num+=" ";
+			} 
+		}
+		String[] b = num.trim().split(" ");
+		for (int i=0,j=0;i<a.length;i++)
+		{
+			if (a[i]>='a' && a[i]<='z')
+			{
+				for (int k=1;k<=Integer.parseInt(b[j]);k++)
+				{
+					System.out.print(a[i]+" ");
+				}
+				j++;
+				System.out.println(" ");
+			}
+		}
+		
+	}
+}

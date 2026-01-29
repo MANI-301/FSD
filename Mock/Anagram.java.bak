@@ -1,0 +1,57 @@
+import java.util.*;
+class Anagram {
+    public static void main(String[] args) {
+        String s1 = "silent";
+        String s2 = "listen";
+        System.out.println(anagram(s1, s2));
+    }
+
+    public static String anagram(String s1, String s2) {
+        s1 = upperCase(s1);
+        s2 = upperCase(s2);
+        char[] a = charArray(s1);
+        char[] b = charArray(s2);
+        Sort(a);
+        Sort(b);
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] != b[i]) {
+                return "Not Pangram";
+            }
+        }
+        return "Pangram";
+    }
+	
+	
+    public static String upperCase(String str) {
+        String result = "";
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch >= 'a' && ch <= 'z') {
+                result += (char)(ch - 32);
+            } else {
+                result += ch;
+            }
+        }
+        return result;
+    }
+
+    public static char[] charArray(String str) {
+        char[] arr = new char[str.length()];
+        for (int i = 0; i < str.length(); i++) {
+            arr[i] = str.charAt(i);
+        }
+        return arr;
+    }
+
+    public static void Sort(char[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) { 
+            for (int j = 0; j < arr.length - 1 - i; j++) { 
+                if (arr[j] > arr[j + 1]) {
+                    char temp = arr[j];  
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+}
