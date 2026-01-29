@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .outer{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(198, 247, 3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .outer > h1{
+            color: white;
+        }
+        .inner{
+            height: 200px;
+            width: 200px;
+            background-color: gainsboro;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1>Login Form</h1>
+        <div class="inner">
+               <form action="">
+            <label for="">Username</label>
+            <input type="text" id="n">
+             <label for="">Password</label>
+            <input type="text" id="p">
+            <button>Submit</button>
+        </div>
+    </div>
+    <script src="./Login.js"></script>
+</body>
+</html>

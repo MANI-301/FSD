@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cal</title>
+    <style type="text/css" media="all">
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.out{
+    height: 100vh;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.in{
+   height: 400px;
+   width: 300px;
+   background-color: black;
+   padding: 20px;
+   border-radius: 11px;
+}
+.butt{
+    display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr ;
+gap: 10px;
+/* grid-template-columns: 20px 20px 20px 20px ; */
+
+}
+button {
+    height: 50px;
+    width: 50px;
+    border-radius: 7px;
+}
+input{
+    height: 50px;
+    width: 260px;
+    margin-bottom: 20px;
+    text-align: right;
+    font-size: 20px;
+    border-radius: 7px;
+    padding-right: 7px;
+}
+    </style>
+</head>
+<body>
+    <div class="out"><div class="in">
+        <input type="text">
+    <div class="butt">
+<button onclick="cls()">C</button>
+<button onclick="backSpace()"><-</button>
+<button onclick="appendNumber(`/`)">/</button>
+<button onclick="appendNumber(`*`)">*</button>
+<button  onclick="appendNumber(7)">7</button>
+<button  onclick="appendNumber(8)">8</button>
+<button  onclick="appendNumber(9)">9</button>
+<button  onclick="appendNumber(`-`)">-</button>
+<button  onclick="appendNumber(4)">4</button>
+<button  onclick="appendNumber(5)">5</button>
+<button  onclick="appendNumber(6)">6</button>
+<button  onclick="appendNumber(`+`)">+</button>
+<button onclick="appendNumber(1)">1</button>
+<button onclick="appendNumber(2)">2</button>
+<button onclick="appendNumber(3)">3</button>
+<button onclick="appendNumber(`%`)">% </button>
+<button onclick="appendNumber(0)">0</button>
+<button onclick="appendNumber(`00`)">00</button>
+<button onclick="appendNumber(`.`)">.</button>
+<button onclick="res()">=</button>
+    </div>
+    </div></div>
+    <script>
+// let input=document.querySelector(`input`)    
+// console.log(input);
+
+let appendNumber=(num)=>{
+   document.querySelector(`input`).value +=num;
+    console.log(`append`);
+    
+}
+let res=()=>{
+    let val=document.querySelector(`input`).value
+    document.querySelector(`input`).value=eval(val)
+    // console.log(`res`);
+}
+let backSpace=()=>{
+  let a= document.querySelector(`input`)
+  a.value=a.value.slice(0,-1)
+    // console.log(`back`);    
+}
+
+let cls=()=>{
+    let a=document.querySelector(`input`)
+    a.value=``
+    // console.log(`cls`);  
+}
+</script>
+</body>
+</html>

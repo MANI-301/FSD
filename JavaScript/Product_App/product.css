@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 80px;
+    background-color: orange;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav > h1{
+    color: green;
+    text-transform: uppercase;
+}
+nav > h1:hover{
+    color: indigo;
+    cursor: pointer;
+}
+
+nav > .search{
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 20px;
+    background-color: blanchedalmond;
+}
+.card{
+    height: 230px;
+    width: 350px;
+    border: 1.5px solid black;
+    background-color: rgb(165, 31, 255);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+
+}
+
+.card > img{
+ height: 150px;
+ width: 150px;
+}
+

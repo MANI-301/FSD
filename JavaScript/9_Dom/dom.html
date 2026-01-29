@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 50px;
+            background-color: rgb(255, 146, 3);
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        nav > h1{
+            color: red;
+
+        }
+        nav > ul{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            list-style: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+            font-size: 16px;
+        }
+        .container{
+                 height: 300px;
+                 background-color: rgb(36, 190, 100);
+                 display: flex;
+                 justify-content: space-around;
+                 align-items: center;
+        }
+        .container > .card{
+            height: 200px;
+            width: 300px;
+            background-color: azure;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+        .con2{
+            height: 170px;
+            background-color: tomato;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <h1 id="logo">DOM</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <button class="b">Login</button>
+    </nav>
+    <div class="container">
+        <div class="card" id="c1">
+                <h1>Iam box 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card" id="c2">
+                 <h1>Iam box 1</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="card" id="c3">
+                
+        </div>
+
+    </div>
+    <div class="section">
+        <h1>DOM container</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, eligendi?</p>
+        <button>Submit</button>
+    </div>
+    <script src="./dom.js"></script>
+</body>
+</html>

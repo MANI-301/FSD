@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+
+.header{
+    height: 30px;
+    width: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.header > input{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 60%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: center;
+}
+::placeholder{
+    font-size: 16px;
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+.header > button{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 40%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+.main{
+    height: 300px;
+    width: 500px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.main >h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: darkgreen;
+}
+
+.main >h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: red;
+}
